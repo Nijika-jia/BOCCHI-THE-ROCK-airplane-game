@@ -1,0 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #333;  /* 背景色，可根据需求调整 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .game-container {
+    border: 2px solid #fff; /* 边界线 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  
