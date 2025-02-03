@@ -494,6 +494,17 @@ function checkCollisions() {
       canvas.removeEventListener('click', startHandler);
     }
   });
+
+canvas.addEventListener('touchend', function startHandler(e) {
+    if (!gameStarted) {
+      gameStarted = true;
+      // 可选：让背景音乐播放
+      audio.bgm.play();
+      // 移除开始监听（如果不需要重复点击）
+      canvas.removeEventListener('touchend', startHandler);
+    }
+  });
+
   function drawUI() {
     // 血条
     ctx.fillStyle = 'red';
